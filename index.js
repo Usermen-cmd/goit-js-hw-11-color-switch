@@ -23,9 +23,9 @@ const onStartClick = function () {
 };
 
 const onButtonsClick = function (e) {
-  if (e.target.dataset.action === 'start') {
+  if (e.currentTarget.dataset.action === 'start') {
     onStartClick();
-    nodeBtnStart = e.target;
+    nodeBtnStart = e.currentTarget;
     nodeBtnStart.disabled = true;
     return;
   }
